@@ -54,8 +54,23 @@ $$
 \frac{dx_2}{dt}=x_1
 $$
 
-
 $$
 y = 0.29x_1 + 0.2407x_2
 $$
+
+Esto lo ponemos como la función en Julia:
+
+```Julia
+function ()
+ dx1_dt = -1.95*x1 - 0.9296*x2 + u
+ dx2_dt = x1
+ return[dx1_dt, dx2_dt]
+end 
+```
+
+
+
+
+
+
 
