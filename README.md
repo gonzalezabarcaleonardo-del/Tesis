@@ -72,10 +72,22 @@ end
 
 El artículo de Runge-Kutta está [aquí](https://github.com/gonzalezabarcaleonardo-del/Tesis/blob/main/goeken.pdf)
 
+Las ecuaciones utlizadas en el método de Runge Kutta de quinto orden son las siguientes:
 
+$$
+y_(n+1) = y_n + b_1*k_1
+$$
 
+$$
 
+$$
 
+$$
 
+$$
 
+$$
 
+$$
+
+$$
