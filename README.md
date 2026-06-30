@@ -28,3 +28,34 @@ print("Matrix C:\n", sys_ss.C)
 print("Matrix D:\n", sys_ss.D)
 
 ```
+
+Esto da como salida: 
+
+```
+Matrix A:
+ [[-1.95   -0.9296]
+ [ 1.      0.    ]]
+Matrix B:
+ [[1.]
+ [0.]]
+Matrix C:
+ [[0.29   0.2407]]
+Matrix D:
+ [[0.]]
+```
+
+Esto lo interpretamos como: 
+
+$$
+\frac{dx_1}{dt}=-1.95x_1 - 0.9296x_2 + u
+$$
+
+$$
+\frac{dx_2}{dt}=x_1
+$$
+
+
+$$
+y = 0.29x_1 + 0.2407x_2
+$$
+
