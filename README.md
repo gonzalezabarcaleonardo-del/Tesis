@@ -75,6 +75,30 @@ El artículo de Runge-Kutta está [aquí](https://github.com/gonzalezabarcaleona
 Las ecuaciones utlizadas en el método de Runge Kutta de quinto orden son las siguientes:
 
 $$
+k_1 = hf(y_n)
+$$
+
+
+$$
+k_2 = hf(y_n + \frac{1}{3}k_1 + \frac{1}{18}hf_yk_1)
+$$
+
+
+$$
+k_3 = hf(y_n - \frac{152}{125}k_1 + \frac{252}{125}k_2 - \frac{44}{125} hf_yk_1)
+$$
+
+
+$$
+k_4 = hf(y_n + \frac{19}{2}k_1 - \frac{72}{7}k_2 + \frac{25}{14}k_3 + \frac{5}{2}hf_yk_1)
+$$
+
+$$
+y_n+1 = y_n + \frac{5}{48}k_1 + \frac{27}{56}k_2 + \frac{125}{336}k_3 + \frac{1}{24}k_4
+$$
+
+
+$$
 y_n+1 = y_n + b_1k_1 + b_2k_2 + b_3k_3 + b_4k_4
 $$
 
