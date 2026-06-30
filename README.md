@@ -70,6 +70,9 @@ x2=y[2]
 end 
 ```
 
+El artículo de Runge-Kutta está [aquí](https://github.com/gonzalezabarcaleonardo-del/Tesis/blob/main/goeken.pdf)
+
+
 
 
 
