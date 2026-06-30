@@ -1,9 +1,11 @@
 # Tesis
 ## Transformar espacios de estado 
 Tenemos la función de transferencia: 
+
 $$
 G(s)= \frac{0.29s + 0.2407}{s^2 + 1.95s + 0.9296}
 $$
+
 Se usa el siguiente código: 
 ```Python
 import control as ct
