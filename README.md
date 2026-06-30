@@ -75,7 +75,7 @@ El artículo de Runge-Kutta está [aquí](https://github.com/gonzalezabarcaleona
 Las ecuaciones utlizadas en el método de Runge Kutta de quinto orden son las siguientes:
 
 $$
-y_ [n+1] = y_n + b_1k_1 + b_2k_2 + b_3k_3 + b_4k_4
+y_ [n+1 = y_n + b_1k_1 + b_2k_2 + b_3k_3 + b_4k_4
 $$
 
 
