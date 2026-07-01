@@ -61,7 +61,7 @@ $$
 Esto lo ponemos como la función en Julia:
 
 ```Julia
-function (y, u)
+function sistema3(y, u)
 x1=y[1]
 x2=y[2] 
  dx1_dt = -1.95*x1 - 0.9296*x2 + u
