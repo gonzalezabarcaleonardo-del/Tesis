@@ -76,12 +76,13 @@ Las ecuaciones utlizadas en el método de Runge Kutta de quinto orden son las si
 
 
 $$
-y_{n+1} = y_n + h\sum_{i=1}^{2} b_ik_i
+y_{n+1} = y_n + h\sum_{i=1}^{s} b_ik_i
 $$
 
+Donde:
 
 $$
-k_2 = hf(y_n + \frac{1}{3}k_1 + \frac{1}{18}hf_yk_1)
+k_i = f(t_n + C_ih, y_n + \sum_{j=1}^{s} a_{ij}k_j)
 $$
 
 
