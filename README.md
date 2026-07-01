@@ -133,7 +133,7 @@ $$
 La función Rungue-Kutta es la siguiente:
 
 ```Julia
-funtion RK5(f, h, t, y_n, u)
+function RK5(f, h, t, y_n, u)
    k_1 = f(t, y_n, u)
    k_2 = f(t + h/3, y_n + (h*k_1)/3, u)
    k_3 = f(t + 2*h/5, y_n + h*(4*k_1/25+6*k_2/25), u)
@@ -145,3 +145,16 @@ funtion RK5(f, h, t, y_n, u)
 end
 
 ```
+
+---
+
+# Controladores 
+## Controlador PID
+
+La ecuación del controlador PID es la siguiente: 
+
+$$
+U(t) = k_p e(t) + k_i \int e(t) dt + k_d \frac{de(t)}{dt} 
+$$
+
+
