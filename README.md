@@ -61,12 +61,12 @@ $$
 Esto lo ponemos como la función en Julia:
 
 ```Julia
-function sistema3(y, u)
-x1=y[1]
-x2=y[2] 
- dx1_dt = -1.95*x1 - 0.9296*x2 + u
- dx2_dt = x1
- return[dx1_dt, dx2_dt]
+function sistema3(t, y, u)
+   x1=y[1]
+   x2=y[2] 
+   dx1_dt = -1.95*x1 - 0.9296*x2 + u
+   dx2_dt = x1
+   return [dx1_dt, dx2_dt]
 end 
 ```
 
@@ -129,3 +129,19 @@ $$
 b_1 + b_2 + b_3 + b_4 = 1
 $$
 
+
+La función Rungue-Kutta es la siguiente:
+
+```Julia
+funtion RK5(f, h, t, y_n, u)
+   k_1 = f(t, y_n, u)
+   k_2 = f(t + h/3, y_n + (h*k_1)/3, u)
+   k_3 = f(t + 2*h/5, y_n + h*(4*k_1/25+6*k_2/25), u)
+   k_4 = f(t + h, y_n + h*(k_1/4 - 3*k_2 + 15*k_3/4), u)
+   k_5 = f(t + 2*h/5, y_n + h*(2*k_1/27 + 10k_2/9 - 50*k_3/81 + 8*k_4/81), u)
+   k_6 = f(t + 4*h/5, y_n +h*(2*k_1/25 + 12*k_2/25 + 2*k_3/15 + 8*k_4/75), u)
+   y_np1 = y_n + h*(23*k_1/192 +125*k_3/192 - 27*k_5/64 + 125*k_6/292)
+   return y_np1 
+end
+
+```
