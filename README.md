@@ -177,7 +177,22 @@ end
 La ecuación del controlador PID es la siguiente: 
 
 $$
-U(t) = k_p e(t) + k_i \int e(t) dt + k_d \frac{de(t)}{dt} 
+u(t) = k_p e(t) + k_i \int e(t) dt + k_d \frac{de(t)}{dt} 
 $$
+
+
+```Julia
+function Control_PID(x, e, ie, de)
+   k_p = x[1]
+   k_i = x[2]
+   k_d = x[3]
+   u = k_p*e + k_i*ie + k_d*de
+   return u
+end
+
+```
+
+
+
 
 
