@@ -154,7 +154,7 @@ $$
 
 
 $$
-k_6 = f(t_n + h\frac{4h}{5}, y_n + h(\frac{2k_1}{25} + \frac{12k_2}{25} - \frac{2k_3}{15} + \frac{8k_4}{75}))
+k_6 = f(t_n + \frac{4h}{5}, y_n + h(\frac{2k_1}{25} + \frac{12k_2}{25} - \frac{2k_3}{15} + \frac{8k_4}{75}))
 $$
 
 
